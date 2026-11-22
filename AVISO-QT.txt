@@ -1,0 +1,25 @@
+Orquestador usa Qt 6.10.3 bajo la licencia LGPL v3
+====================================================
+
+Esta aplicación usa el framework Qt (https://www.qt.io), versión 6.10.3, bajo la
+GNU Lesser General Public License versión 3 (LGPL v3). El texto de la licencia está en
+LGPL-3.0.txt, y la GPL v3 a la que remite, en GPL-3.0.txt.
+
+Módulos de Qt incluidos: qtbase (Core, Gui, Network), qtdeclarative (Qml, Quick,
+Quick Controls, Shapes), qtsvg y qtimageformats. Todos se distribuyen bajo LGPL v3.
+
+Qt está enlazado de forma dinámica: sus bibliotecas son los archivos Qt6*.dll y las
+carpetas de plugins que acompañan a orquestador.exe. Puedes sustituirlas por otra
+compilación de Qt 6.10 compatible (por ejemplo, una que tú mismo hayas modificado y
+compilado) y la aplicación la usará.
+
+Código fuente de Qt 6.10.3:
+  https://download.qt.io/official_releases/qt/6.10/6.10.3/submodules/
+
+Bibliotecas de ejecución del compilador MinGW incluidas junto al .exe:
+- libgcc_s_seh-1.dll y libstdc++-6.dll (GCC): GPL v3 con la excepción de la biblioteca
+  de ejecución de GCC (GCC Runtime Library Exception), que permite incluirlas sin que la
+  aplicación quede sujeta a la GPL.
+- libwinpthread-1.dll (proyecto mingw-w64): licencia de tipo MIT/BSD.
+
+Las demás bibliotecas de terceros y sus licencias se listan en THIRD_PARTY_LICENSES.md.
